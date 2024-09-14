@@ -9,8 +9,12 @@ function App() {
 
       <h3>Alter size depending on screen</h3>
       <p>Take screen customization and add to you tailwindcss.config.js file</p>
-      <p className="text-xs lg:text-3xl">Apply to me! == (means this sentence)</p>
+      <p className="text-xs lg:text-5xl">Apply to me! == (means this sentence)</p>
+      <br/>
+      <h3 className="mb-1">Using Arbitary Values</h3>
+      <p className="bg-[#acc955] py-2 ">On me am using arbitary values</p>
 
+      <p>I am <span>span</span> and i have been applied a chain style on index.css</p>
     </section>
 
   );
