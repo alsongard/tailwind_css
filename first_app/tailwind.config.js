@@ -6,10 +6,13 @@ module.exports = {
   theme: {
 
     extend: {
-      colors: {
-        newer: "#f033ff"
+      colors:{
+        newer:{
+          100: "#f8c471",
+          500: "#f99c09"
+        }
       }
-    },
+    }
   },
   plugins: [],
 }
