@@ -38,6 +38,39 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* grid practise */}
+      <div class="mt-6">
+        <h1 class="font-title sm:text-sm lg:text-3xl">Grids</h1>
+        <div class="grid-container">
+            <p class="grid-object">1 column</p>
+            <p class="grid-object">2 column</p>
+            <p class="grid-object col-span-3 bg-slate-400">3 column</p>
+            <p class="grid-object">4 column</p>
+            <p class="grid-object">5 column</p>
+            <p class="grid-object">6 column</p>
+        </div>
+      </div>
+
+      <div class="grid gap-1 grid-cols-3 m-auto w-11/12 bg-slate-400 p-2">
+        <p class="p-1 bg-sky-950 rounded ">1</p>
+        <p class="p-1 bg-sky-950 rounded ">2</p>
+        <p class="p-1 col-start-2 bg-sky-950 rounded ">3</p>
+        <p class="p-1 bg-sky-950 rounded ">4</p>
+        <p class="p-1 bg-sky-950 rounded ">5</p>
+        <p class="p-1 bg-sky-950 rounded ">6</p>
+      </div>
+
+      <h3>Using row-span</h3>
+      <div class="grid gap-1 grid-cols-3 m-auto w-11/12 bg-red-300 rounded p-2">
+        <p class="p-1 row-span-2 bg-sky-950 rounded ">1 Applying row-span-2</p>
+        <p class="p-1 bg-sky-950 rounded">2</p>
+        <p class="p-1 col-start-2 bg-sky-950 rounded">3</p>
+        <p class="p-1 bg-sky-950 rounded">4</p>
+        <p class="p-1 bg-sky-950 rounded">5</p>
+        <p class="p-1 bg-sky-950 rounded">6</p>
+      </div>
+
     </section>
 
   );
