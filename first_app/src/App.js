@@ -1,4 +1,4 @@
-
+import blackMyth from "./black-myth-wukong-HD-scaled.jpg"
 function App() {
   return (
     <section className="w-screen">
@@ -41,7 +41,7 @@ function App() {
 
       {/* grid practise */}
       <div class="mt-6">
-        <h1 class="font-title sm:text-sm lg:text-3xl">Grids</h1>
+        <h1 class="title">Grids</h1>
         <div class="grid-container">
             <p class="grid-object">1 column</p>
             <p class="grid-object">2 column</p>
@@ -71,6 +71,27 @@ function App() {
         <p class="p-1 bg-sky-950 rounded">6</p>
       </div>
 
+
+      {/* container */}
+      <h1 class="title  mt-5">Container</h1>
+      <div class="container columns-3 mx-auto border-4 border-cyan-400 px-3 rounded">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas venenatis eros in ante ultrices rutrum. Suspendisse 
+          porta enim at nulla ultrices, eget posuere magna finibus. In eu maximus sem. Mauris hendrerit mauris at nisi dignissim
+          volutpat sit amet non elit. Etiam ut lacus orci. Vivamus sit amet nibh quis enim consequat lacinia. Duis varius dolor 
+          sed nulla bibendum, et sodales arcu semper. </p>
+          <p> Nulla ut dolor odio. Ut sodales volutpat ligula. Quisque aliquam enim 
+          feugiat enim interdum, in gravida arcu venenatis. Cras et faucibus tortor, eu lacinia nibh. Etiam a libero non urna 
+          efficitur dapibus. Mauris consequat ex elit, vel facilisis risus sodales eu.</p>
+          <p> Phasellus lacinia lorem et enim ornare tristique volutpat at est. Maecenas non purus id ante aliquet iaculis eu vel nulla. Nullam convallis metus id est scelerisque, eget aliquam lacus sodales. </p>
+      </div>
+
+      <div class="container columns-2 mx-auto my-5 bg-slate-900">
+        <img src={blackMyth} alt="black myth wukong"/>
+        <div>
+          <h1 class="font-title text-2xl text-white">Game of the year</h1>
+          <p class="mt-4 text-white">Black Myth: Wukong is an action RPG rooted in Chinese mythology. You shall set out as the Destined One to venture into the challenges and marvels ahead, to uncover the obscured truth beneath the veil of a glorious legend from the past. </p>
+        </div>
+      </div>
     </section>
 
   );
