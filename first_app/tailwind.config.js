@@ -5,11 +5,11 @@ module.exports = {
   ],
   theme: {
     screens: {
-      sm: '480px',
+      sm: '200px', //minimim width
       // => @media (min-width: 576px) { ... }
-      md: '768px',
+      md: '500px',
       // => @media (min-width: 960px) { ... }
-      lg: '976px',
+      lg: '1000px',
       // => @media (min-width: 976px) { ... }
       xl: "1440px"
       // => @media (min-width: 1440px) { ... }
