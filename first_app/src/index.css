@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +15,10 @@
     /* applying chaining */
     @apply text-sky-400 text-sm uppercase text-xl ;
   }
-  /* body{
-    background-color: aqua;
-  } */
+  h1 {
+    @apply text-red-400;
+    font-family: "Playwrite CU", sans-serif;
+
+  }
+
 }
