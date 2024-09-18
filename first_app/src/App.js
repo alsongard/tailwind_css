@@ -4,6 +4,12 @@ import nature_1 from "./images/pexels-tomas-malik-nature-1.jpg";
 import spiderman from "./images/spiderman.jpg";
 import winged from "./images/backiee-55830-portrait.jpg";
 import warprincess from "./images/backiee-96330-portrait.jpg";
+import toby from "./images/tobySpiderman.jpg";
+import garField from "./images/andrewGarfield.webp";
+import tom from "./images/tomHolland.jpg";
+import electro from "./images/electro.jpg"
+import venom from "./images/venom.jpg";
+import mysterio from "./images/mysterio.jpg";
 function App() {
   return (
     <section className="w-screen">
@@ -106,13 +112,13 @@ function App() {
           <li>Overflow visible</li>
           <li>Overflow hidden</li>
         </ul>
-        <p>class="overflow-visible relative max-w-sm mx-auto bg-white shadow-lg ring-1 ring-black/5 rounded-xl flex items-center gap-6 dark:bg-slate-800 dark:highlight-white/5"</p>
-        <p>class="absolute -left-6 w-24 h-24 rounded-full shadow-lg</p>
+        {/* <p>class="overflow-visible relative max-w-sm mx-auto bg-white shadow-lg ring-1 ring-black/5 rounded-xl flex items-center gap-6 dark:bg-slate-800 dark:highlight-white/5"</p>
+        <p>class="absolute -left-6 w-24 h-24 rounded-full shadow-lg</p> */}
         {/* contianer for user profiles */}
         {/* removed container in the class below to enable full width */}
         <div class="mt-6 p-[23px] relative flex flex-row flex-wrap justify-between gap-x-2 gap-y-5 border-2 border-red-500 ">
           
-          <div class="relative overflow-visible justify-center items-center flex flex-row  p-2 bg-slate-500 rounded w-1/4">
+          <div class="relative overflow-visible justify-center items-center flex   p-2 bg-slate-500 rounded w-1/4">
             <img class="absolute -left-3  w-[87px]  h-[87px] rounded-full" src={nature_1}/>
             <div>
               <p class="text-white">Nature</p>
@@ -120,7 +126,7 @@ function App() {
             </div>
           </div>
           {/* overflow hidden */}
-          <div class="relative bg-slate-500 p-2 w-1/4 rounded overflow-hidden flex flex-row items-center justify-center">
+          <div class="relative bg-slate-500 p-2 w-1/4 rounded overflow-hidden flex  items-center justify-center">
             <img class="absolute -top-1 -left-4 w-[87px] h-[87px] rounded-full " src={spiderman}/>
             <div>
               <p class="text-white">Daniel Makamu</p>
@@ -128,14 +134,14 @@ function App() {
             </div>
           </div>
           {/* 2 more for practise */}
-          <div class="relative flex flex-row items-center justify-center overflow-visible bg-slate-500 rounded w-1/4">
+          <div class="relative flex  items-center justify-center overflow-visible bg-slate-500 rounded w-1/4">
             <img class="w-[87px] h-[87px] rounded-full absolute -left-3 -top-1 " src={winged} />
             <div>
               <p class="text-white">Kery Hilson</p>
               <p class="text-white">Software Developer</p>
             </div>
           </div>
-          <div class="relative bg-slate-500 flex flex-row justify-center items-center p-2 overflow-hidden  w-1/4 rounded">
+          <div class="relative bg-slate-500 flex  justify-center items-center p-2 overflow-hidden  w-1/4 rounded">
             <img class="w-[87px] h-[87px] absolute -left-3 -top-1 rounded-full" src={warprincess}  />
             <div> 
               <p class="text-white">BlackOps</p>
@@ -151,6 +157,63 @@ function App() {
         <div class=" w-[20px] h-[20px] bg-red-500"></div>
         <div class=" w-[20px] h-[20px] bg-red-500"></div>
       </div>
+
+      <h1 class="title">Overflow-auto property</h1>
+      <p class="text-center">My solution from learning</p>
+
+      <div class="relative rounded-xl   my-5 p-6">
+        <div class="relative rounded-xl overflow-auto h-[330px] p-5  mx-auto flex flex-col ring-1 ring-orange-300 max-w-sm  space-y-5">
+          
+          <div class="relative flex flex-row space-x-[72px]   items-center overflow-visible bg-slate-800 rounded p-2 ">
+            <img class="w-[87px] h-[87px] rounded-full absolute -left-4" src={toby}/>
+            <div class="flex flex-col">
+              <p class="text-white">Toby Maguire</p>
+              <p class="text-white">Spider-man 1, 2, 3</p>
+            </div>
+          </div>
+
+          <div class="relative flex items-center space-x-[72px] bg-slate-800 p-2 ">
+            <img class="w-[87px] h-[87px] rounded-full absolute -left-4 " src={garField}/>
+            <div>
+              <p class="text-white">Andrew Garfield</p>
+              <p class="text-white">Amazing Spider-man</p>
+            </div>
+          </div>
+
+          <div class="relative flex flex-row bg-slate-800 p-2  space-x-[72px] rounded"> 
+            <img class="w-[87px] h-[87px] rounded-full absolute -left-4 -top-1" src={tom}/>
+            <div>
+              <p class="text-white">Tom Holland</p>
+              <p class="text-white">Spider-man</p>
+            </div>
+          </div>
+
+          <div class="relative flex flex-row bg-slate-800 p-2 space-x-[72px]  rounded"> 
+            <img class="w-[87px] h-[87px] rounded-full absolute -left-4 -top-1" src={venom}/>
+            <div>
+              <p class="text-white">Tom Hardy</p>
+              <p class="text-white">Venom</p>
+            </div>
+          </div>
+
+          <div class="relative flex flex-row bg-slate-800 p-2 space-x-[72px]  rounded"> 
+            <img class="w-[87px] h-[87px] rounded-full absolute -left-4 -top-1" src={mysterio}/>
+            <div>
+              <p class="text-white">Jake Gyllenhaal</p>
+              <p class="text-white">mysterio</p>
+            </div>
+          </div>
+
+          <div class="relative flex flex-row bg-slate-800 p-2 space-x-[72px] rounded"> 
+            <img class="w-[87px] h-[87px] absolute rounded-full  -left-4 -top-1" src={electro}/>
+            <div class="ml-5">
+              <p class="text-white">Jamie Foxx</p>
+              <p class="text-white">Electro</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
 
   );
