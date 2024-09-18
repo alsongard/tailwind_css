@@ -1,4 +1,9 @@
-import blackMyth from "./black-myth-wukong-HD-scaled.jpg"
+import blackMyth from "./images/black-myth-wukong-HD-scaled.jpg";
+import spider from "./images/backiee-227559-landscape.jpg"
+import nature_1 from "./images/pexels-tomas-malik-nature-1.jpg";
+import spiderman from "./images/spiderman.jpg";
+import winged from "./images/backiee-55830-portrait.jpg";
+import warprincess from "./images/backiee-96330-portrait.jpg";
 function App() {
   return (
     <section className="w-screen">
@@ -91,6 +96,60 @@ function App() {
           <h1 class="font-title text-2xl text-white">Game of the year</h1>
           <p class="mt-4 text-white">Black Myth: Wukong is an action RPG rooted in Chinese mythology. You shall set out as the Destined One to venture into the challenges and marvels ahead, to uncover the obscured truth beneath the veil of a glorious legend from the past. </p>
         </div>
+      </div>
+
+
+      <h1 class="title">Overflow Property</h1>
+      {/* overflow attributes/properties */}
+      <div class="my-4 p-4 border-2 border-indigo-600">
+        <ul class="mt-2 mb-4 list-disc">
+          <li>Overflow visible</li>
+          <li>Overflow hidden</li>
+        </ul>
+        <p>class="overflow-visible relative max-w-sm mx-auto bg-white shadow-lg ring-1 ring-black/5 rounded-xl flex items-center gap-6 dark:bg-slate-800 dark:highlight-white/5"</p>
+        <p>class="absolute -left-6 w-24 h-24 rounded-full shadow-lg</p>
+        {/* contianer for user profiles */}
+        {/* removed container in the class below to enable full width */}
+        <div class="mt-6 p-[23px] relative flex flex-row flex-wrap justify-between gap-x-2 gap-y-5 border-2 border-red-500 ">
+          
+          <div class="relative overflow-visible justify-center items-center flex flex-row  p-2 bg-slate-500 rounded w-1/4">
+            <img class="absolute -left-3  w-[87px]  h-[87px] rounded-full" src={nature_1}/>
+            <div>
+              <p class="text-white">Nature</p>
+              <p class="text-white">Team Leader</p>
+            </div>
+          </div>
+          {/* overflow hidden */}
+          <div class="relative bg-slate-500 p-2 w-1/4 rounded overflow-hidden flex flex-row items-center justify-center">
+            <img class="absolute -top-1 -left-4 w-[87px] h-[87px] rounded-full " src={spiderman}/>
+            <div>
+              <p class="text-white">Daniel Makamu</p>
+              <p class="text-white">Project Manager</p>
+            </div>
+          </div>
+          {/* 2 more for practise */}
+          <div class="relative flex flex-row items-center justify-center overflow-visible bg-slate-500 rounded w-1/4">
+            <img class="w-[87px] h-[87px] rounded-full absolute -left-3 -top-1 " src={winged} />
+            <div>
+              <p class="text-white">Kery Hilson</p>
+              <p class="text-white">Software Developer</p>
+            </div>
+          </div>
+          <div class="relative bg-slate-500 flex flex-row justify-center items-center p-2 overflow-hidden  w-1/4 rounded">
+            <img class="w-[87px] h-[87px] absolute -left-3 -top-1 rounded-full" src={warprincess}  />
+            <div> 
+              <p class="text-white">BlackOps</p>
+              <p class="text-white">CyberSec</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="flex  flex-row space-x-2 bg-purple-300">
+        <div class=" w-[20px] h-[20px] bg-red-500"></div>
+        <div class=" w-[20px] h-[20px] bg-red-500"></div>
+        <div class=" w-[20px] h-[20px] bg-red-500"></div>
+        <div class=" w-[20px] h-[20px] bg-red-500"></div>
       </div>
     </section>
 
