@@ -7,11 +7,11 @@ module.exports = {
     screens: {
       sm: '200px', //minimim width
       // => @media (min-width: 576px) { ... }
-      md: '500px',
+      md: '600px',
       // => @media (min-width: 960px) { ... }
       lg: '1000px',
       // => @media (min-width: 976px) { ... }
-      xl: "1440px"
+      xl: "1600px"
       // => @media (min-width: 1440px) { ... }
     },
     spacing: {
@@ -25,14 +25,35 @@ module.exports = {
     },
 
     extend: {
+      spacing: {
+        '8xl': '96rem',
+        '9xl': '128rem',
+      },
+      borderRadius: {
+        '4xl': '2rem',
+      },
       colors:{
-        newer:{
+        newer: {
           100: "#f8c471",
           500: "#f99c09"
         }
+      },
+      fontFamily:{
+        "title":["Playfair Display"],
       }
     }
   },
   plugins: [],
 }
 
+/*        newer:{
+  100: "#f8c471",
+  500: "#f99c09"
+}
+        colors:{
+        newer:{
+          100: "#f8c471",
+          500: "#f99c09"
+        }
+      },
+  */

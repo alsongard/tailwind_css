@@ -10,7 +10,8 @@
     /* adding custom css */
     margin:0;
     padding:0;
-    box-sizing:border-box;
+    box-sizing: border-box;
+
   }
   span {
     /* applying chaining */
@@ -25,6 +26,10 @@
   }
   .grid-container{
     @apply grid grid-rows-4 lg:grid-cols-3 gap-2 mx-4 md:grid-cols-2;
+  }
+  .title
+  {
+    @apply font-title sm:text-sm lg:text-3xl text-center;
   }
 
 }

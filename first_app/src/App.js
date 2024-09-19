@@ -214,6 +214,64 @@ function App() {
         </div>
       </div>
 
+      {/* solution from tailwind */}
+      <div class="relative rounded-xloverflow-auto my-5 p-8">
+        
+        <div class="relative bg-slate-500 rounded-xl overflow-auto h-[330px] divide-y divide-slate-200   mx-auto flex flex-col ring-1 ring-orange-300 max-w-sm ">
+          <div class="relative flex  space-x-[90px] p-4  items-center overflow-visible  rounded">  {/* container for the img and text */}
+            <img alt="spider-characters" class="w-[67px] h-[67px] rounded-full absolute" src={toby}/>
+            <div class="flex flex-col">
+              <p class="text-white">Toby Maguire</p>
+              <p class="text-white">Spider-man 1, 2, 3</p>
+            </div>
+          </div>
+
+          <div class="relative flex items-center space-x-[90px] overflow-visible p-4">
+            <img alt="spider-characters" class="w-[67px] h-[67px] rounded-full absolute left-2  " src={garField}/>
+            <div>
+              <p class="text-white">Andrew Garfield</p>
+              <p class="text-white">Amazing Spider-man</p>
+            </div>
+          </div>
+
+          <div class="relative flex flex-row  space-x-[90px] rounded overflow-visible p-4"> 
+            <img alt="spider-characters" class="w-[67px] h-[67px] rounded-full absolute left-2" src={tom}/>
+            <div>
+              <p class="text-white">Tom Holland</p>
+              <p class="text-white">Spider-man</p>
+            </div>
+          </div>
+
+          <div class="relative flex flex-row space-x-[90px]  rounded overflow-visible p-4"> 
+            <img alt="spider-characters" class="w-[67px] h-[67px] rounded-full absolute left-2" src={venom}/>
+            <div>
+              <p class="text-white">Tom Hardy</p>
+              <p class="text-white">Venom</p>
+            </div>
+          </div>
+
+          <div class="relative flex flex-row space-x-[90px]  rounded overflow-visible p-4"> 
+            <img class="w-[67px] h-[67px] rounded-full absolute left-2" src={mysterio}/>
+            <div>
+              <p class="text-white">Jake Gyllenhaal</p>
+              <p class="text-white">mysterio</p>
+            </div>
+          </div>
+
+          <div class="relative flex flex-row  p-4 space-x-[90px] overflow-visible rounded"> 
+            <img class="w-[67px] h-[67px] absolute rounded-full  left-2 " src={electro}/>
+            <div class="ml-5">
+              <p class="text-white">Jamie Foxx</p>
+              <p class="text-white">Electro</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div>
+        <h1 class="title">Horizontal Scrolling</h1>
+      </div>
     </section>
 
   );
