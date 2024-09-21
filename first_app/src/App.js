@@ -214,7 +214,7 @@ function App() {
       </div>
 
       {/* solution from tailwind */}
-      <div class="relative rounded-xloverflow-auto my-5 p-8">
+      <div class="relative rounded-xl overflow-auto my-5 p-8">
         
         <div class="relative z bg-slate-500 rounded-xl overflow-auto h-[330px] divide-y divide-slate-200   mx-auto flex flex-col ring-1 ring-orange-300 max-w-sm ">
           <div class="relative flex  space-x-[90px] p-4  items-center overflow-visible  rounded">  {/* container for the img and text */}
@@ -267,9 +267,8 @@ function App() {
         </div>
       </div>
 
-
       <div class="mb-4">
-        <h1 class="title mb-4 ">Horizontal Scrolling</h1>
+        <h1 class="title mb-4 ">Horizontal Scrolling : overflow-x-auto</h1>
 
         <div class="overflow-x-auto max-w-md mx-auto flex flex-row space-x-6 bg-slate-400 rounded"> {/* container for horizontal scrolling  */}
           <div class="flex-none py-4 px-3">
@@ -278,7 +277,7 @@ function App() {
               <p>Kali Linux</p>
             </div>
           </div>
-          
+
           <div class="flex-none py-4 px-3">
             <div class="flex flex-col gap-3">
               <img class="w-[60px] h-[60px] rounded-full" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.QlyeaM7yGHx2Kmm-dKQhKAHaEK%26pid%3DApi&f=1&ipt=b0324e5ddaa4f6b27ce4afb13c0bc33a4a63a493d38340d4cf7f94653565a28a&ipo=images" alt=""/>
@@ -308,6 +307,50 @@ function App() {
           </div>
 
         </div>
+      </div>
+
+
+      {/* horizontal scrolling */}
+      <div>
+        <h1 class="title">Overflow-y-auto</h1>
+      </div>
+      <div class="overflow-y-auto h-[302px] max-w-md mx-auto   bg-slate-800 divide-y divide-white rounded-xl my-4">
+        <div class="flex flex-row items-center p-2 gap-3"> {/* user details scrolling */}
+          <img  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.80yDDPczDGoSe86Ndo5MFQHaLB%26pid%3DApi&f=1&ipt=2ebce51b82392e91e873da5fe8cb2f874de932df0989aeb478e833003227b0f1&ipo=images" class="w-[64px] h-[64px] rounded-full" alt=""/>
+          <div class="flex flex-col">
+            <p>Linux Torvalds</p>
+            <p>Linux Founder</p>
+          </div>
+        </div>
+        <div class="flex flex-row p-2 items-center gap-3"> {/* user details scrolling */}
+          <img  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.mn6hs3SYOBqlHp1632_PvAHaFY%26pid%3DApi&f=1&ipt=3fb1ffb7fb689e99c32a602072edd6af24aaff40be11e3d4fb44005ab0d2c925&ipo=images" class="w-[64px] h-[64px] rounded-full" alt=""/>
+          <div class="flex flex-col">
+            <p>Dennis Ritchie</p>
+            <p>C Language Founder</p>
+          </div>
+        </div>
+        <div class="flex flex-row p-2 items-center gap-3"> {/* user details scrolling */}
+          <img  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.WAj-Y3-JTbHTg8I97cs01wHaGL%26pid%3DApi&f=1&ipt=b03780d6151b6ea504bb0337fb5c4899ae2931fa76daebe57a33ad6d288a7a87&ipo=images" class="w-[64px] h-[64px] rounded-full" alt=""/>
+          <div class="flex flex-col">
+            <p>Guido van Rossum </p>
+            <p>Python Language Founder</p>
+          </div>
+        </div>
+        <div class="flex flex-row p-2 items-center gap-3"> {/* user details scrolling */}
+          <img  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.y8vxrv_BBJHWG0uKbPjY4gHaLG%26pid%3DApi&f=1&ipt=96c3defe2d199fdfd56a532b0e3437070885e847dd8b84b1da67051b2a53ffa0&ipo=images" class="w-[64px] h-[64px] rounded-full" alt=""/>
+          <div class="flex flex-col">
+            <p>Bjarne Stroustrup</p>
+            <p>C++ Language Founder</p>
+          </div>
+        </div>
+        <div class="flex flex-row p-2 items-center gap-3"> {/* user details scrolling */}
+          <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg/220px-Brendan_Eich_Mozilla_Foundation_official_photo.jpg" class="w-[64px] h-[64px] rounded-full" alt=""/>
+          <div class="flex flex-col">
+            <p>Brendan Eich</p>
+            <p>Javascript Language Founder</p>
+          </div>
+        </div>
+
       </div>
     </section>
 
