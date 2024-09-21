@@ -1,5 +1,4 @@
 import blackMyth from "./images/black-myth-wukong-HD-scaled.jpg";
-import spider from "./images/backiee-227559-landscape.jpg"
 import nature_1 from "./images/pexels-tomas-malik-nature-1.jpg";
 import spiderman from "./images/spiderman.jpg";
 import winged from "./images/backiee-55830-portrait.jpg";
@@ -119,7 +118,7 @@ function App() {
         <div class="mt-6 p-[23px] relative flex flex-row flex-wrap justify-between gap-x-2 gap-y-5 border-2 border-red-500 ">
           
           <div class="relative overflow-visible justify-center items-center flex   p-2 bg-slate-500 rounded w-1/4">
-            <img class="absolute -left-3  w-[87px]  h-[87px] rounded-full" src={nature_1}/>
+            <img alt="" class="absolute -left-3  w-[87px]  h-[87px] rounded-full" src={nature_1}/>
             <div>
               <p class="text-white">Nature</p>
               <p class="text-white">Team Leader</p>
@@ -127,7 +126,7 @@ function App() {
           </div>
           {/* overflow hidden */}
           <div class="relative bg-slate-500 p-2 w-1/4 rounded overflow-hidden flex  items-center justify-center">
-            <img class="absolute -top-1 -left-4 w-[87px] h-[87px] rounded-full " src={spiderman}/>
+            <img alt="" class="absolute -top-1 -left-4 w-[87px] h-[87px] rounded-full " src={spiderman}/>
             <div>
               <p class="text-white">Daniel Makamu</p>
               <p class="text-white">Project Manager</p>
@@ -135,14 +134,14 @@ function App() {
           </div>
           {/* 2 more for practise */}
           <div class="relative flex  items-center justify-center overflow-visible bg-slate-500 rounded w-1/4">
-            <img class="w-[87px] h-[87px] rounded-full absolute -left-3 -top-1 " src={winged} />
+            <img alt="" class="w-[87px] h-[87px] rounded-full absolute -left-3 -top-1 " src={winged} />
             <div>
               <p class="text-white">Kery Hilson</p>
               <p class="text-white">Software Developer</p>
             </div>
           </div>
           <div class="relative bg-slate-500 flex  justify-center items-center p-2 overflow-hidden  w-1/4 rounded">
-            <img class="w-[87px] h-[87px] absolute -left-3 -top-1 rounded-full" src={warprincess}  />
+            <img alt="" class="w-[87px] h-[87px] absolute -left-3 -top-1 rounded-full" src={warprincess}  />
             <div> 
               <p class="text-white">BlackOps</p>
               <p class="text-white">CyberSec</p>
@@ -165,7 +164,7 @@ function App() {
         <div class="relative rounded-xl overflow-auto h-[330px] p-5  mx-auto flex flex-col ring-1 ring-orange-300 max-w-sm  space-y-5">
           
           <div class="relative flex flex-row space-x-[72px]   items-center overflow-visible bg-slate-800 rounded p-2 ">
-            <img class="w-[87px] h-[87px] rounded-full absolute -left-4" src={toby}/>
+            <img alt="spider-characters" class="w-[87px] h-[87px] rounded-full absolute -left-4" src={toby}/>
             <div class="flex flex-col">
               <p class="text-white">Toby Maguire</p>
               <p class="text-white">Spider-man 1, 2, 3</p>
@@ -173,7 +172,7 @@ function App() {
           </div>
 
           <div class="relative flex items-center space-x-[72px] bg-slate-800 p-2 ">
-            <img class="w-[87px] h-[87px] rounded-full absolute -left-4 " src={garField}/>
+            <img alt="spider-characters" class="w-[87px] h-[87px] rounded-full absolute -left-4 " src={garField}/>
             <div>
               <p class="text-white">Andrew Garfield</p>
               <p class="text-white">Amazing Spider-man</p>
@@ -181,7 +180,7 @@ function App() {
           </div>
 
           <div class="relative flex flex-row bg-slate-800 p-2  space-x-[72px] rounded"> 
-            <img class="w-[87px] h-[87px] rounded-full absolute -left-4 -top-1" src={tom}/>
+            <img alt="spider-characters" class="w-[87px] h-[87px] rounded-full absolute -left-4 -top-1" src={tom}/>
             <div>
               <p class="text-white">Tom Holland</p>
               <p class="text-white">Spider-man</p>
@@ -189,7 +188,7 @@ function App() {
           </div>
 
           <div class="relative flex flex-row bg-slate-800 p-2 space-x-[72px]  rounded"> 
-            <img class="w-[87px] h-[87px] rounded-full absolute -left-4 -top-1" src={venom}/>
+            <img alt="spider-characters" class="w-[87px] h-[87px] rounded-full absolute -left-4 -top-1" src={venom}/>
             <div>
               <p class="text-white">Tom Hardy</p>
               <p class="text-white">Venom</p>
@@ -197,7 +196,7 @@ function App() {
           </div>
 
           <div class="relative flex flex-row bg-slate-800 p-2 space-x-[72px]  rounded"> 
-            <img class="w-[87px] h-[87px] rounded-full absolute -left-4 -top-1" src={mysterio}/>
+            <img alt="spider-characters" class="w-[87px] h-[87px] rounded-full absolute -left-4 -top-1" src={mysterio}/>
             <div>
               <p class="text-white">Jake Gyllenhaal</p>
               <p class="text-white">mysterio</p>
@@ -205,7 +204,7 @@ function App() {
           </div>
 
           <div class="relative flex flex-row bg-slate-800 p-2 space-x-[72px] rounded"> 
-            <img class="w-[87px] h-[87px] absolute rounded-full  -left-4 -top-1" src={electro}/>
+            <img alt="spider-characters" class="w-[87px] h-[87px] absolute rounded-full  -left-4 -top-1" src={electro}/>
             <div class="ml-5">
               <p class="text-white">Jamie Foxx</p>
               <p class="text-white">Electro</p>
@@ -217,7 +216,7 @@ function App() {
       {/* solution from tailwind */}
       <div class="relative rounded-xloverflow-auto my-5 p-8">
         
-        <div class="relative bg-slate-500 rounded-xl overflow-auto h-[330px] divide-y divide-slate-200   mx-auto flex flex-col ring-1 ring-orange-300 max-w-sm ">
+        <div class="relative z bg-slate-500 rounded-xl overflow-auto h-[330px] divide-y divide-slate-200   mx-auto flex flex-col ring-1 ring-orange-300 max-w-sm ">
           <div class="relative flex  space-x-[90px] p-4  items-center overflow-visible  rounded">  {/* container for the img and text */}
             <img alt="spider-characters" class="w-[67px] h-[67px] rounded-full absolute" src={toby}/>
             <div class="flex flex-col">
@@ -251,7 +250,7 @@ function App() {
           </div>
 
           <div class="relative flex flex-row space-x-[90px]  rounded overflow-visible p-4"> 
-            <img class="w-[67px] h-[67px] rounded-full absolute left-2" src={mysterio}/>
+            <img alt="spider-characters" class="w-[67px] h-[67px] rounded-full absolute left-2" src={mysterio}/>
             <div>
               <p class="text-white">Jake Gyllenhaal</p>
               <p class="text-white">mysterio</p>
@@ -259,7 +258,7 @@ function App() {
           </div>
 
           <div class="relative flex flex-row  p-4 space-x-[90px] overflow-visible rounded"> 
-            <img class="w-[67px] h-[67px] absolute rounded-full  left-2 " src={electro}/>
+            <img alt="spider-characters" class="w-[67px] h-[67px] absolute rounded-full  left-2 " src={electro}/>
             <div class="ml-5">
               <p class="text-white">Jamie Foxx</p>
               <p class="text-white">Electro</p>
@@ -269,8 +268,46 @@ function App() {
       </div>
 
 
-      <div>
-        <h1 class="title">Horizontal Scrolling</h1>
+      <div class="mb-4">
+        <h1 class="title mb-4 ">Horizontal Scrolling</h1>
+
+        <div class="overflow-x-auto max-w-md mx-auto flex flex-row space-x-6 bg-slate-400 rounded"> {/* container for horizontal scrolling  */}
+          <div class="flex-none py-4 px-3">
+            <div class="flex flex-col gap-3">
+              <img class="w-[60px] h-[60px] rounded-full" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.dcpBzZcIf5qwaDfc92oRaAHaEo%26pid%3DApi&f=1&ipt=07f8a76982032702e3633bc8b59e810b69c2f4107692c6642f0a9423a05cb6fa&ipo=images" alt=""/>
+              <p>Kali Linux</p>
+            </div>
+          </div>
+          
+          <div class="flex-none py-4 px-3">
+            <div class="flex flex-col gap-3">
+              <img class="w-[60px] h-[60px] rounded-full" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.QlyeaM7yGHx2Kmm-dKQhKAHaEK%26pid%3DApi&f=1&ipt=b0324e5ddaa4f6b27ce4afb13c0bc33a4a63a493d38340d4cf7f94653565a28a&ipo=images" alt=""/>
+              <p>Arch Linux</p>
+            </div>
+          </div>
+
+          <div class="flex-none py-4 px-3">
+            <div class="flex flex-col gap-3">
+              <img class="w-[60px] h-[60px] rounded-full" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP._TFAhyxCk25J327Pu3b1MQHaEK%26pid%3DApi&f=1&ipt=3c7cbf15ce6e226175dbbd3f20cc58953de7c8ce74f38932d4a664a2bf631e59&ipo=images" alt=""/>
+              <p>Ubuntu </p>
+            </div>
+          </div>
+
+          <div class="flex-none py-4 px-3">
+            <div class="flex flex-col gap-3">
+              <img class="w-[60px] h-[60px] rounded-full" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.f70sQiu3jdap2JfVAxDo7gHaEK%26pid%3DApi&f=1&ipt=5394c6fd29c76ccf9f6e95a7683555e830898505e21d3d2b94c4d8ca87d3fe9c&ipo=images" alt=""/>
+              <p>Window</p>
+            </div>
+          </div>
+
+          <div class="flex-none py-4 px-3">
+            <div class="flex flex-col gap-3">
+              <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.1MqGR1vOrrM560LtBGMOVgHaFj%26pid%3DApi&f=1&ipt=193c89ebcb256685b1ee2e5c057d5aeb10fbcf214d40490a5bcf37b47f2b2425&ipo=images" class="rounded-full h-[60px] w-[60px]" alt=""/>
+              <p>Android</p>
+            </div> 
+          </div>
+
+        </div>
       </div>
     </section>
 
