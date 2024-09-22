@@ -59,8 +59,9 @@ function App() {
 
   return (
     <section className="w-screen dark:bg-black dark:text-white ligth:bg-rose-500 text-black">
-      <header className="bg-rose-500 border-b-2 border-sky-500" >
+      <header className="bg-rose-500 border-b-2 border-sky-500 flex  items-center justify-between" >
       <h1 className="text-4xl text-teal-400 font-bold text-left">Hello world!</h1>
+      <button onClick={handleClick} class=" px-4 bg-sky-400 rounded-xl block mx-auto">DarkMode</button>
       </header>
       <p className="text-4xl text-newer-500">This is my Fight Song</p>
 
@@ -402,7 +403,6 @@ function App() {
 
 
 
-      <button onClick={handleClick} class="bg-green-200 px-4 py-2 rounded-xl block mx-auto">DarkMode</button>
     </section>
 
   );
