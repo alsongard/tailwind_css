@@ -1,3 +1,4 @@
+import React from "react";
 import blackMyth from "./images/black-myth-wukong-HD-scaled.jpg";
 import nature_1 from "./images/pexels-tomas-malik-nature-1.jpg";
 import spiderman from "./images/spiderman.jpg";
@@ -10,8 +11,54 @@ import electro from "./images/electro.jpg"
 import venom from "./images/venom.jpg";
 import mysterio from "./images/mysterio.jpg";
 function App() {
+
+  //initialize a state variable
+  const [theme, setTheme] = React.useState("");
+
+  //initaalize useEffect to check prefered browser Mode
+  React.useEffect(()=>{
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches)
+      {
+        setTheme("dark");
+      }    
+    else
+    {
+      setTheme("light");
+    }
+  }, [])
+  //initialize useEffect
+  React.useEffect(()=>{
+    if (theme === "dark")
+    {
+      document.documentElement.classList.add("dark");
+    }
+    else
+    {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+  console.log(theme);
+  function handleClick()
+  {
+    setTheme((theme)=>{
+      
+      // return theme === "dark" ? "light" : "dark";
+      if (theme === "light")
+      {
+        theme = "dark";
+        return theme;
+      }
+      else
+      {
+        theme = "light";
+        return theme;
+      }
+
+    })
+  };
+
   return (
-    <section className="w-screen">
+    <section className="w-screen dark:bg-black dark:text-white ligth:bg-rose-500 text-black">
       <header className="bg-rose-500 border-b-2 border-sky-500" >
       <h1 className="text-4xl text-teal-400 font-bold text-left">Hello world!</h1>
       </header>
@@ -352,6 +399,10 @@ function App() {
         </div>
 
       </div>
+
+
+
+      <button onClick={handleClick} class="bg-green-200 px-4 py-2 rounded-xl block mx-auto">DarkMode</button>
     </section>
 
   );
